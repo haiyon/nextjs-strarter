@@ -1,0 +1,16 @@
+{
+  "name": "cna-template-typescript",
+  "short_name": "cna-template-typescript",
+  "description": "cna-template-typescript",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "banner/favicon.ico",
+      "sizes": "32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

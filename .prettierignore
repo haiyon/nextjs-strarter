@@ -1,0 +1,5 @@
+build/*
+public/*
+.next/*
+src/generated/*
+next-env.d.ts

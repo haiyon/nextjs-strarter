@@ -1,0 +1,7 @@
+build/*
+public/*
+.next/*
+src/generated/*
+next-env.d.ts
+next.config.js
+server.js
