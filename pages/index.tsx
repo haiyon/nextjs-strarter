@@ -1,8 +1,8 @@
 import Page from '../components/page';
 
 const Index = () => (
-  <Page title="Stone Console">
-    <div>Stone Console</div>
+  <Page title="Next.js Template for Typescripts">
+    <div>Next.js Template for Typescripts</div>
   </Page>
 );
 

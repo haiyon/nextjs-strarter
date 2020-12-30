@@ -2,8 +2,8 @@ import '../styles/globals.scss';
 
 import { ApolloProvider } from '@apollo/client';
 
-import { useApollo } from '../helpers/apollo';
 import MainLayout from '../layouts';
+import { useApollo } from '../utils/apollo';
 
 const App = ({ Component, pageProps }: any) => {
   const apolloClient = useApollo(pageProps.initialApolloState);
