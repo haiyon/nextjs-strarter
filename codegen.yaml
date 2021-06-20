@@ -1,0 +1,7 @@
+#schema: https://qs.uapis.com/graphql
+generates:
+  types/graphql.d.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-react-query

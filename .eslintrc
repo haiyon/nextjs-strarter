@@ -1,5 +1,4 @@
 {
-  "root": true,
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint",
@@ -11,15 +10,10 @@
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "prettier",
-    "prettier/react",
     "plugin:jsx-a11y/recommended",
-    "prettier/@typescript-eslint"
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
     "project": "./tsconfig.json"
   },
   "ignorePatterns": [
@@ -31,28 +25,23 @@
     "node": true
   },
   "rules": {
+    "simple-import-sort/imports": "warn",
+    "simple-import-sort/exports": "warn",
     "react/react-in-jsx-scope": "off",
-    "jsx-a11y/anchor-is-valid": [
-      "error",
-      {
-        "components": [
-          "Link"
-        ],
-        "specialLink": [
-          "hrefLeft", "hrefRight"
-        ],
-        "aspects": [
-          "invalidHref", "preferButton"
-        ]
-      }
-    ],
-    "simple-import-sort/imports": "error",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "hrefLeft", "hrefRight" ],
+      "aspects": [ "invalidHref", "preferButton" ]
+    }],
     "no-prototype-builtins": "off",
     "import/prefer-default-export": "off",
     "import/no-default-export": "off",
     "react/destructuring-assignment": "off",
     "react/jsx-filename-extension": "off",
     "no-underscore-dangle": "off",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "@typescript-eslint/no-explicit-any": "off",

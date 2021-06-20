@@ -22,10 +22,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "types": [
-      "react"
-    ],
-    "jsx": "preserve"
+    "jsx": "preserve",
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/layouts/*": ["layouts/*"],
+      "@/utils/*": ["utils/*"],
+      "@/hooks/*": ["hooks/*"],
+      "@/assets/*": ["assets/*"]
+    }
   },
   "exclude": [
     "node_modules"
@@ -33,6 +37,7 @@
   "include": [
     "next-env.d.ts",
     "types",
+    "types.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ]

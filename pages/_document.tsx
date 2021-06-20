@@ -1,6 +1,6 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
     const initialProps = await Document.getInitialProps(ctx);
     return { ...initialProps };
@@ -10,11 +10,10 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="utf-8" />
-          <link rel="icon" href="static/banner/favicon.ico" />
-          <link rel="manifest" href="static/manifest.json" />
+          <link rel="icon" href="/images/banner/favicon.ico" />
+          <link rel="manifest" href="/manifest.json" />
         </Head>
-        <body>
+        <body className="antialiased text-gray-500">
           <Main />
           <NextScript />
         </body>
@@ -23,7 +22,9 @@ export default class MyDocument extends Document {
   }
 }
 
-MyDocument.getInitialProps = async (ctx) => {
+MyDocument.getInitialProps = async ctx => {
   const initialProps = await Document.getInitialProps(ctx);
   return { ...initialProps };
 };
+
+export default MyDocument;
