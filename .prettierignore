@@ -1,5 +1,7 @@
 build/*
 public/*
 .next/*
+out/
+dist/
 src/generated/*
 next-env.d.ts
