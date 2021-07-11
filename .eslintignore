@@ -1,6 +1,8 @@
 build/*
 public/*
 .next/*
+dist/
+out/
 src/generated/*
 next-env.d.ts
 next.config.js
