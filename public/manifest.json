@@ -1,7 +1,7 @@
 {
-  "name": "cna-template-typescript",
-  "short_name": "cna-template-typescript",
-  "description": "cna-template-typescript",
+  "name": "nextjs-starter",
+  "short_name": "nextjs-starter",
+  "description": "nextjs-starter",
   "display": "standalone",
   "scope": "/",
   "theme_color": "#fff",
