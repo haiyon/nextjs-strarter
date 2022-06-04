@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Router from 'next/router';
 import React from 'react';
 
-import Title from '@/components/Page/Title';
+import Title from '@/components/page/title';
 
 const progress = new ProgressBar({
   size: 2,

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { ReactNode } from 'react';
 
 type Props = {
@@ -6,9 +5,5 @@ type Props = {
 };
 
 const MainLayout: React.FC<Props> = ({ children }: Props) => <>{children}</>;
-
-MainLayout.propTypes = {
-  children: PropTypes.node
-};
 
 export default MainLayout;

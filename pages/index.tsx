@@ -1,4 +1,4 @@
-import Page from '@/components/Page/Page';
+import { Page } from '@/components/page/page';
 
 const Index = () => (
   <Page title="Next.js Template for Typescripts">

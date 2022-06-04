@@ -1,13 +1,12 @@
 import Head from 'next/head';
-import PropTypes from 'prop-types';
 import React from 'react';
 
-interface Props {
+export interface HeadTitleProps {
   suffix?: string;
   children?: string;
 }
 
-const Title: React.FC<Props> = ({ suffix, children }) => {
+const HeadTitle: React.FC<HeadTitleProps> = ({ suffix, children }) => {
   const title = children ? children + (suffix ? ` - ${suffix}` : '') : 'Next.js Starter';
   return (
     <Head>
@@ -18,9 +17,4 @@ const Title: React.FC<Props> = ({ suffix, children }) => {
   );
 };
 
-Title.propTypes = {
-  suffix: PropTypes.string,
-  children: PropTypes.string
-};
-
-export default Title;
+export default HeadTitle;
