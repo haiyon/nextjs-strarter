@@ -1,20 +1,19 @@
-const path = require('path');
-const pkg = require('./package.json');
+/** @type {import('next').NextConfig} */
 
 const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   poweredByHeader: false,
-  assetPrefix: isProd ? 'https://cdn.domain.com' : '',
+  assetPrefix: isProd ? 'https://cdn.domain.com' : undefined,
   reactStrictMode: true,
-  env: {
-    SENTRY_DSN: '',
-    SENTRY_TOKEN: '',
-    SENTRY_RELEASE: `Release ${pkg.version}`
+  output: 'export',
+  images: {
+    unoptimized: true
   },
-  sassOptions: {
-    includePaths: [path.join(__dirname, 'assets/styles')]
+  experimental: {
+    taint: true
   },
+  swcMinify: true,
   webpack: (config, options) => {
     if (!options.dev) {
       options.defaultLoaders.babel.options.cache = false;
@@ -50,4 +49,4 @@ const nextConfig = {
   }
 };
 
-module.exports = nextConfig;
+export default nextConfig;

@@ -1,9 +1,10 @@
 import '@/assets/styles/global.css';
 
+import React from 'react';
+
 import ProgressBar from '@badrap/bar-of-progress';
 import Head from 'next/head';
 import Router from 'next/router';
-import React from 'react';
 
 import Title from '@/components/page/title';
 
